@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="shortcut icon" th:href="@{/css/img/logo/logoJSoft.png}" type="image/x-icon">
+    <title> JSoft | O Futuro dos caninos </title>
+</head> 
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span class="a"> JSoft |</span> <span class="b"> O futuro dos caninos </span>
+        </div>
+        <div class="navegacao">
+            <a href="/"> Home </a>
+            <a href="/sobre"> Sobre a JSoft </a>
+            <a id="btn" href="funcionario/list"> Gerenciamento de Funcionários </a>
+            <button class="botaodm" onclick="toggleDarkMode()"> <img style="width: 24px; height: 24px;" th:src="@{/css/img/brightness.png}" alt="Não deu não..."></button> 
+        </div>
+    </nav>
+
+    <br>
+  
+    <header class="header">
+        <h2 style="text-decoration: underline;"> O que podemos desenvolver para você hoje? </h2>
+        <div class="img"> <img style="width: 70%;height: 640px; border-radius: 18px;" th:src="@{/css/img/foto-header.jpg}" alt=""> </div>
+    </header>
+
+    <section class="content">
+        <h2> Por que escolher a JSoft? </h2>
+        <div class="fileira">
+            <div class="card">
+                <img style="margin-top: 2%;" th:src="@{/css/img/badge.png}" alt="">
+                <h3> Qualidade </h3>
+                <p> A JSoft é considerada a melhor empresa de tecnologia <br> da América Canina pela
+                    CaniTec™, levamos nosso serviço à sério, para entregar aos nossos clientes, tudo o quê eles desejam. </p>
+            </div>
+            <div class="card">
+                    <img style="width: 126px;height: 126px;margin-top: 2%;" th:src="@{/css/img/wall-clock.png}" alt="">
+                    <h3> Agilidade </h3>
+                    <p> Na JSoft, focamos em entregar um bom produto dentro do menor tempo possível, a maioria dos projetos tem 100 cães atribuídos para garantir o menor prazo possível. </p>
+            </div>
+            <div class="card">
+                <img th:src="@{/css/img/sunrise.png}" alt="">
+                <h3> Jornada de Trabalho </h3>
+                <p> A JSoft se importa muito com seus cães-funcionários, por isso, a maior jornada de trabalho diária é 6 horas, acredite, ninguém gosta de ver um cão mal-humorado </p>
+            </div>
+        </div>
+    </section>
+
+<footer>
+    <br>
+    <div class="txtfooter">
+        A JSoft™ é uma empresa PiSoft™, que também é uma empresa RSWsoft™
+    </div>
+    
+</footer> 
+</body>
+<script>
+    function toggleDarkMode() {
+    var dmBody = document.body;
+    dmBody.classList.toggle("dark-mode");
+  }
+</script>
+</html>

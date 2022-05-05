@@ -1,0 +1,380 @@
+/* FAZER CSS PARA INFERIOR A 923PX */
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    transition: background-color 1s, color 1s;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    box-sizing: border-box;
+}
+/* Navbar */
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-wrap: row wrap;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.365);
+}
+.logo{
+    flex: 20%;
+    margin-left: 5%;
+    text-align: center;
+}
+.logo .a{
+    font-size: 50px;
+    color: rgb(145, 231, 7);
+    font-family: 'Satisfy', cursive;
+}
+.logo .b{
+    font-size: 25px;
+    color: rgb(145, 231, 7);
+    font-family: 'Satisfy', cursive;
+    text-transform: capitalize;
+}
+.navegacao{
+    flex: 75%;
+    margin-right: 5%;
+    text-align: right;
+    font-size: 20px;
+}
+.navegacao a{
+    color: rgb(145, 231, 7);
+    text-decoration: none;
+    padding: 20px 16px;
+    font-weight: 600;
+}
+.navegacao a:visited{
+    color: rgb(145, 231, 7);
+}
+.navegacao a:hover{
+    color: rgb(8, 125, 8);
+    border-top: 3px solid rgb(8, 125, 8);
+    transition:  border-top 100ms, color 100ms;
+}
+#btn{
+    color: white;
+    background-color: rgb(145, 231, 7);
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 200ms, box-shadow 200ms;
+}
+#btn:hover{
+    border-top: none;
+    background-color: rgb(8, 125, 8);
+    box-shadow: 4px 4px  9px rgba(0, 0, 0, 0.125);
+}
+.botaodm{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(145, 231, 7);
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    margin-left: 3%;
+    transition: background-color 200ms;
+}
+.header h2{
+    color: rgb(145, 231, 7);
+    font-size: 42px;
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+}
+.img{
+    text-align: center;
+}
+.botaodm:hover{
+  cursor: pointer;
+  background-color: rgb(8, 125, 8);
+}
+/* Fim Navbar */
+/* Section */
+.content{
+    text-align: center;
+}
+.content h2{
+    color: rgb(145, 231, 7);
+    font-family: 'Satisfy', cursive;
+    font-size: 56px;
+    text-align: center;
+}
+.fileira{
+    display: flex;
+    flex-wrap: row wrap;
+}
+.card{
+    margin: 1%;
+    flex: 30%;
+    border: 2px solid rgb(145, 231, 7);
+    height: 480px;
+    border-radius: 12px;
+}
+.card h3{
+    color: rgb(145, 231, 7);
+    font-family: 'Satisfy', cursive;
+    font-size: 32px;
+}
+.card p{
+    color: rgb(145, 231, 7);
+    font-weight: 700;
+    font-size: 20px;
+    width: 240px;
+    text-align: center;
+    margin: 0 auto;
+}
+/* FIM Section */
+/* Página Sobre */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.sobre{
+    flex: 24%;
+    margin: 1%;
+    height: 560px;
+    border: 1px solid rgb(145, 231, 7);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.125);
+}
+.sobre h4{
+    font-family: 'Satisfy', cursive;
+    color: rgb(145, 231, 7);
+    font-size: 40px;
+}
+.sobre-pi-oculto h4{
+    font-family: 'Satisfy', cursive;
+    color: rgb(148, 0, 211);
+    font-size: 40px;
+}
+.sobre p{
+    width: 240px;
+    text-align: center;
+    margin: 0 auto;
+}
+.conteudo h3{
+    font-family: 'Satisfy', cursive;
+    font-size: 50px;
+    color: rgb(145, 231, 7);
+    text-align: center;
+}
+.sobre-img{
+    margin-top: 2%;
+    width: 240px;
+    height: 240px;
+    border-radius: 180px;
+    border: 2px solid rgb(145, 231, 7);
+}
+.sobre:hover .sobre-pi{
+    display: none;
+}
+.sobre-pi-oculto{
+    display: none;
+    transition: 700ms;
+    color: rgb(148, 0, 211);
+}
+.sobre:hover .sobre-pi-oculto{
+    display: block;
+}
+.sobre h6{
+    font-size: 18px;
+    font-weight: 700;
+}
+.botaoadd{
+    color: rgb(145, 231, 7);
+    transition: color 400ms;
+}
+.botaoadd:hover{
+    color: rgb(8, 125, 8);
+}
+.form-title{
+    font-family: 'Satisfy', cursive;
+    color: rgb(145, 231, 7);
+    font-size: 32px;
+    text-align: center;
+    margin-top: 1%;
+}
+.form-add{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border: 1px solid rgb(145, 231, 7);
+    border-radius: 8px;
+    text-align: center;
+    width: 560px;
+    height: 480px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.185);
+}
+
+.form-add h3{
+    color: rgb(145, 231, 7);
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+    margin-bottom: 2%;
+}
+
+.form-add input{
+    border-radius: 12px;
+    border: 1px solid rgb(145, 231, 7);
+    padding: 10px 8px;
+    background-color: transparent;
+    transition: border 150ms;
+}
+.form-add input:focus{
+    border: 2px solid rgb(145, 231, 7);
+    outline: none;
+}
+
+.form-add label{
+    color: rgb(145, 231, 7);
+}
+
+.form-add ::placeholder{
+    text-align: center;
+}
+
+.btn-save{
+    background-color: rgb(145, 231, 7);
+    padding: 20px 16px;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    transition: background-color 300ms;
+    margin-right: 1%;
+}
+.btn-dois{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 20px 16px;
+    border-radius: 12px;
+    border: none;
+    transition: background-color 300ms;
+    margin-left: 1%;
+}
+.btn-save:hover{
+    cursor: pointer;
+    background-color: rgb(8, 125, 8);
+}
+.btn-dois:hover{
+    cursor: pointer;
+    background-color: rgb(153, 7, 7);
+}
+.texto-add{
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.form-add-btn{
+    margin-top: 3%;
+}
+/* FIM Sobre */
+/* Tabela */
+table{
+    margin: 0 auto;
+    border: 2px solid rgba(153, 153, 153);
+    border-radius: 12px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.125);
+    width: 640px;
+    height: 280px;
+    text-align: center;
+}
+th{
+    border-bottom: 2px solid rgb(153, 153, 153);
+    width: 117px;
+    height: 32px;
+    margin: 0 auto;
+    text-align: center;
+}
+tr{
+    margin: 0 auto;
+    text-align: center;
+}
+td{
+    width: 200px;
+    border-right: 1px solid rgb(153, 153, 153);
+    border-left: 1px solid rgb(153, 153, 153);
+    border-bottom: 1px solid rgb(153, 153, 153);
+    margin: 0 auto;
+    text-align: center;
+}
+.divList{
+    text-align: center;
+    justify-content: center;
+}
+
+#logoJ{
+    width: 400px;
+    height: 400px;
+    margin-right: 160px;
+}
+
+.dark-mode{
+    background-color: rgb(37, 37, 37);
+    color: rgb(255, 255, 255);
+}
+
+.col {
+    height: 500px;
+    padding: 24px;
+    width: 33%;
+    text-align: center;
+}
+.container {
+    border: 3px solid black;
+    border-radius: 0.35em;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    width: 65%;
+    box-shadow: 12px 8px 32px 6px rgba(102, 102, 102, 0.356);
+}
+.row {
+    display: flex;
+    justify-content: center;
+    padding: 64px;
+}
+footer{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    color: rgb(145, 231, 7);
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.365);
+    font-family: 'IBM Plex Sans Arabic' , sans-serif;
+}
+::-webkit-scrollbar {
+    width: 12px;
+    box-shadow: 0 0 4px rgb(37, 37, 37);
+  }
+::-webkit-scrollbar-thumb {
+    background: rgb(186, 255, 159);
+    border-radius: 2px;
+    box-shadow: 0 0 6px rgb(37, 37, 37);
+  }
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(8, 175, 92);
+  }
+.edit{
+    border: 2px solid rgb(112, 112, 112);
+    border-radius: 8px;
+    color: rgb(0, 0,0);
+    padding: 12px;
+    transition: color 1s, background-color 1s;
+}
+.edit:hover{
+    cursor: pointer;
+    background-color: rgb(153, 153, 153);
+    color: rgb(255, 255, 255);
+}
