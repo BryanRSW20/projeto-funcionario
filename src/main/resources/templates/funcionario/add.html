@@ -16,12 +16,11 @@
       <div class="logo">
           <span class="a"> JSoft |</span> <span class="b"> O futuro dos caninos </span>
       </div>
-
       <div class="navegacao">
           <a href="/"> Home </a>
           <a href="/sobre"> Sobre a JSoft </a>
           <a id="btn" href="./list"> Gerenciamento de Funcionários </a>
-          <button class="botaodm" onclick="toggleDarkMode()"> <img style="width: 24px; height: 24px;" th:src="@{/css/img/brightness.png}" alt="Não deu não..."></button> 
+          <acronym title="Ativar/Desativar Modo Escuro"> <button class="botaodm" onclick="toggleDarkMode()"> <img style="width: 24px; height: 24px;" th:src="@{/css/img/brightness.png}" alt="Não deu não..."></button>  </acronym>
       </div>
 
   </nav>
@@ -31,7 +30,7 @@
   </div>
 
   <div th:if="${isSaved}" class="alerta-sucesso">
-    <h4> Operação Realizada com sucesso! </h4>
+    <h4> Operação Realizada com sucesso! </h4> <i class="fa fa-check-square"></i> 
   </div>
 
   <div th:if="${isError}" class="alerta-falha">
@@ -59,8 +58,8 @@
       <input th:field="*{telefone}" id="floatlabel-tel" type="text" placeholder="Telefone" required> <br>
         
         <div class="form-add-btn">
-      <button type="submit" class="btn-save"> Salvar <i class="fa fa-check"></i> </button>
-      <button onclick="window.location.href='./list'" type="button" class="btn-dois"> Cancelar <i class="fa fa-ban"></i> </button>
+      <button type="submit" class="btn btn-save"> Salvar <i class="fa fa-check"></i> </button>
+      <button onclick="window.location.href='./list'" type="button" class="btn btn-dois"> Cancelar <i class="fa fa-ban"></i> </button>
         </div>
   </form>
 
