@@ -292,6 +292,7 @@ body{
     background-color: rgba(0, 0, 0, 0.365);
     z-index: -1;
     -webkit-transform: scaleX(0);
+    transform: scaleX(0);
     -webkit-transform-origin: right;
     transform-origin: right;
     transition: -webkit-transform 200ms ease-in;

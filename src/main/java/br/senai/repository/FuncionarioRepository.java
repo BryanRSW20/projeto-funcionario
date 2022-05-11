@@ -13,5 +13,6 @@ import java.util.List;
 
         public Funcionario findByCpf(String cpf);
         public Funcionario findByNomeAndEmail(String nome, String email);
+        public Funcionario findById (long id);
         public List<Funcionario> findByTelefoneLike(String telefone);
 }
