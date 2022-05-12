@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="shortcut icon" th:href="@{/css/img/logo/logoJSoft.png}" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> JSoft | O Futuro dos caninos </title>
+</head> 
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span class="a"> JSoft |</span> <span class="b"> O futuro dos caninos </span>
+        </div>
+        <div class="navegacao">
+            <a href="/"> Home </a>
+            <a href="/sobre"> Sobre a JSoft </a>
+            <a id="btn" href="funcionario/list"> Gerenciamento de Funcionários </a>
+            <acronym title="Ativar/Desativar Modo Escuro"> <button class="botaodm" onclick="toggleDarkMode()"> <img style="width: 24px; height: 24px;" th:src="@{/css/img/brightness.png}" alt="Não deu não..."></button>  </acronym>
+        </div>
+
+    </nav>
+
+    <br>
+
+    <div class="error-msg">
+       <i style="color: rgb(145, 231, 7); font-size: 5rem;" class="fa fa-exclamation-triangle"></i>  <h2> Algo deu errado! </h2>
+        <h4> A Pi acabou de pedir pra resolver esse B.O. aqui. </h4>
+        <h6> Volte mais tarde, ou, veja se você entrou no link certo... </h6>
+
+        <a href="/"> Retornar ao início </a>
+    </div>
+
+</body>
+<script>
+    function toggleDarkMode() {
+    var dmBody = document.body;
+    dmBody.classList.toggle("dark-mode");
+  }
+</script>
+</html>
